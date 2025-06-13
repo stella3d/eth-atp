@@ -76,7 +76,7 @@ There's a few changes to the default user experience that would probably make th
 
 ### Unpin Discover Feed
 
-The "Discover" feed on bluesky is default and pretty bad. we want to avoid having users come into contact with this.
+The "Discover" feed on bluesky is default and a common source of perception complaints about bluesky. we want to avoid having users argue about this point.
 
 I've asked @why.bsky.team if it's possible to onboard users without this feed pinned, we'll see what he says.
 
