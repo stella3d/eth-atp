@@ -70,5 +70,20 @@ This is maximally decentralized, and doesn't incur the necessity of ongoing ops 
 
 However, almost no user that hasn't been onboarded will do this. It's rare enough even among dedicated atproto people. This might be better to add support for later, if we get initial traction.
 
+## Community UX Defaults ?
 
+There's a few changes to the default user experience that would probably make the environment more welcoming. 
 
+### Unpin Discover Feed
+
+The "Discover" feed on bluesky is default and pretty bad. we want to avoid having users come into contact with this.
+
+I've asked @why.bsky.team if it's possible to onboard users without this feed pinned, we'll see what he says.
+
+### Default Blocklist 
+
+Bluesky, as a moderately large public social media, has plenty of people who are really weird about crypto. We can somewhat solve this, at least well enough to improve the initial experience, by having a suggested blocklist for the most prominent anti-crypto reactionaries. An open question is whether we can default subscribe new users to this sort of list, or merely suggest it.
+
+### Starter Packs ?
+
+The counterpoint to a default blocklist is probably community starter packs. Tree made one a while ago: https://bsky.app/starter-pack/tree.fail/3lapya53cvo2s
