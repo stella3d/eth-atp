@@ -40,7 +40,7 @@ This can be accomplished by constructing a correct, signed did document and post
 
 PLC doesn't verify `alsoKnownAs` field on creation - we need to do the handle validation check in our frontend to ensure that users get valid handles.
 
-2) use `did:web` with a `*.eth.limo`/`*.eth.limo` domain. 
+2) use `did:web` with a `*.eth.limo`/`*.eth.xyz` domain. 
 
 This requires an on-chain action. TODO: need someone who understand this part to fill it in.
 
