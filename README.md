@@ -8,6 +8,8 @@ part technical link, part vibes.
 
 The onboarding gateway is a static web page hosted on IPFS, but usually accessed thru some sort of .eth url - atproto-gateway.eth.limo or similar.
 
+TODO: how does associating a .eth link to a CID on ipfs work ? fill this in.
+
 it's not necessary technically to use the ENS link - it's for social signaling / vibes.
 
 ### Keys 
@@ -38,7 +40,7 @@ We currently have an open question around what sort of DID we setup for users. W
 
 This can be accomplished by constructing a correct, signed did document and posting it to https://plc.directory/:did 
 
-PLC doesn't verify `alsoKnownAs` field on creation - we need to do the handle validation check in our frontend to ensure that users get valid handles.
+PLC doesn't verify `alsoKnownAs` field on creation - we need to do the handle validation check in our frontend to ensure that users get valid handles if they are bringing a `.eth` based domain, or another custom domain.
 
 2) use `did:web` with a `*.eth.limo`/`*.eth.xyz` domain. 
 
