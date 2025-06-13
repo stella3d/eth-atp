@@ -4,7 +4,7 @@ how can we make Ethereum community members feel like atproto aligns better with 
 
 part technical link, part vibes.
 
-## Onboarding
+## Onboarding Gateway
 
 The onboarding gateway is a static web page hosted on IPFS, but usually accessed thru some sort of .eth url - atproto-gateway.eth.limo or similar.
 
@@ -12,13 +12,13 @@ it's not necessary technically to use the ENS link - it's for social signaling /
 
 ### Keys 
 
-The gateway generates a self-custodied rotation key for the user's new did, where you have to write down a seed.
+The gateway must generate a self-custodied rotation key for the user's new did, where you have to write down a seed. This key must be registered in the user's DID document.
 
 This part is important both technically and socially.
 
 #### Technical
 
-ensuring that all users onboarded this way have self-custodied rotation keys is a genuine improvement in decentralization vs the status quo on Bluesky, where most users do not have their own rotation keys.
+Ensuring that all users onboarded this way have self-custodied rotation keys is a genuine improvement in decentralization vs the status quo on Bluesky, where most users do not have their own rotation keys.
 This can help us avoid future arguments around decentralization of atproto.
 
 #### Social
@@ -30,8 +30,18 @@ This is important for a few reasons:
 2) writing down the seed _feels_ like crypto. 
 3) "not your keys not your posts"
 
-### DID generation
+## DID Setup
 
-some open questions here:
+We currently have an open question around what sort of DID we setup for users. We have two obvious options, which are not mutually exclusive:
 
-do we do did:web using .eth.limo or similar? or do we onboard users into did:plc ?
+1) use `did:plc` with self-custodied keys. 
+
+This can be accomplished by constructing a correct, signed did document and posting it to https://plc.directory/:did 
+
+PLC doesn't verify `alsoKnownAs` field on creation - we need to do the handle validation check in our frontend to ensure that users get valid handles.
+
+2) use `did:web` with a `*.eth.limo`/`*.eth.limo` domain. 
+
+This requires an on-chain action. TODO: need someone who understand this part to fill it in.
+
+
