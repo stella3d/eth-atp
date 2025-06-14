@@ -14,7 +14,7 @@ Associating a .eth link to a CID on ipfs work:
  * Have the ENS owner set the `Content Hash` record for their domain. They can do this manually by going to the records page of their domain on the ENS site - [see example](https://app.ens.domains/bot.reality.eth?tab=records) - or we can try to send the transaction from our page and open a Metamask window etc.
  * The DID will show up on both `.eth.limo` and `.eth.link` gateways. (It might take a bit of time but it should be under a minute.)
 
-it's not necessary technically to use the ENS link - it's for social signaling / vibes.
+It's not necessary technically to use the ENS link - it's for social signaling / vibes. But everyone will need some kind of handle and using bsky.social would be weird so maybe if you don't have an ENS we should issue you one as a subdomain?
 
 ### Keys 
 
