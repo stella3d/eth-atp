@@ -8,7 +8,11 @@ part technical link, part vibes.
 
 The onboarding gateway is a static web page hosted on IPFS, but usually accessed thru some sort of .eth url - atproto-gateway.eth.limo or similar.
 
-TODO: how does associating a .eth link to a CID on ipfs work ? fill this in.
+Associating a .eth link to a CID on ipfs work:
+
+ * Make a static website consisting of a `.well-known/atproto-did` file containing the DID and pin it with some pinning service. [See Example](https://bot.reality.eth.link/.well-known/atproto-did). If they already have a static website but without an `atproto-did` file it needs to be added to the existing static website. 
+ * Have the ENS owner set the `Content Hash` record for their domain. They can do this manually by going to the records page of their domain on the ENS site - [see example](https://app.ens.domains/bot.reality.eth?tab=records) - or we can try to send the transaction from our page and open a Metamask window etc.
+ * The DID will show up on both `.eth.limo` and `.eth.link` gateways. (It might take a bit of time but it should be under a minute.)
 
 it's not necessary technically to use the ENS link - it's for social signaling / vibes.
 
